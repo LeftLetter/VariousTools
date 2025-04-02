@@ -1,4 +1,8 @@
-// Claude DesltopをEnter改行にするスクリプト
+// Claude DesktopをEnter改行にするスクリプト
+// ①以下を一回だけ実行
+// echo '{"allowDevTools": true}' > ~/Library/Application\ Support/Claude/developer_settings.json
+// ②以下はClaude Desktopを実行する度に実行
+// Command + Option + Shift + i
 
 const handleKeydown = (event) => {
   if (!event.isTrusted) {
